@@ -22,10 +22,10 @@
             this.set('totalResults', Number(this.get('content.meta.total')));
         }.observes('content'),
         hasPrevPage: function(){
-            return this.get('prevPage') > 1;
+            return this.get('prevPage') !== this.get('currentPage');
         }.property('nextPage'),
         hasNextPage: function(){
-            return this.get('nextPage') < this.get('pages');
+            return this.get('nextPage') !== this.get('currentPage');
         }.property('nextPage')
     });
 
