@@ -15,7 +15,7 @@ App.Route = Ember.Route.extend({
 ```javascript
 App.Controller = Ember.Controller.extend(SimplePager.ControllerMixin);
 ```
-```html
+```handlebars
 //template.hbs
 <ul class="pagination">
     <li {{bind-attr class="hasPrevPage::disabled"}}>
