@@ -1,4 +1,4 @@
-##Simple emberjs pager mixin
+Simple emberjs pager mixin
 ==================
 
 ###Computed properties
